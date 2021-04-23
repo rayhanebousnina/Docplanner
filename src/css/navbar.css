@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:wght@100&display=swap');
+
+* {
+background-color : white;
+color: #747474;
+}
+.logo-docplanner {
+width: 268px;
+height: 33px;
+}
+Nav .link {
+font-family: 'Roboto', sans-serif;
+
+}
+Nav .link:hover {
+color : #00b39b !important;  
+}
+.navigation {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
