@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:wght@100&display=swap');
 
 * {
-background-color : white;
 color: #747474;
+overflow-x: hidden;
 }
 .logo-docplanner {
 width: 268px;

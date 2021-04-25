@@ -1,24 +1,51 @@
-import {Card1} from '../css/card1.css';
-import {Card} from 'react-bootstrap';
+import { Card1 } from '../css/card1.css';
+import { Card, Row, Col } from 'react-bootstrap';
 
 
-function CardOne(){
-     return (
+function CardOne() {
+    return (
         <div>
-            <Card className="card1" style={{ width: '18rem' }}>
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
-                </Card.Body>
-            </Card>
+            <Row className="">
+                <Col xs={12} md={4}>
+                    <Card className="card1 mb-5 mx-4">
+                        <Card.Body className="cbody">
+                            <img className="pb-2" src="images/icon-patients.svg"></img>
+                            <Card.Title className="ctitle">For patients</Card.Title>
+                            <Card.Text className="ctext pb-5 mb-5">
+                                Find a doctor, book a visit and solve any health-related doubt
+                            </Card.Text>
+                            <Card.Link href="#">Choose country</Card.Link>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs={12} md={4}>
+                    <Card className="card2 mb-5 mx-4">
+                        <Card.Body className="cbody">
+                            <img className="pb-2" src="images/icon-doctors.svg"></img>
+                            <Card.Title className="ctitle">For doctors</Card.Title>
+                            <Card.Text className="ctext pb-5 mb-5">
+                                Save time managing visits and cut no-shows by half
+                            </Card.Text>
+                            <Card.Link href="#">Choose country</Card.Link>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs={12} md={4}>
+                    <Card className="card3 mb-5 mx-4">
+                        <Card.Body className="cbody">
+                            <img className="pb-2" src="images/icon-clinics.svg"></img>
+                            <Card.Title className="ctitle">For clinics</Card.Title>
+                            <Card.Text className="ctext pb-5 mb-5">
+                                Deliver an exceptional patient experience in your clinic
+                            </Card.Text>
+                            <Row className="pl-4"><Card.Link href="#">2 to 20 specialists</Card.Link></Row>
+                            <Row className="pl-4"><Card.Link href="#">More than 20 specialists</Card.Link></Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
         </div>
-     )
+    )
 }
 
 export default CardOne;

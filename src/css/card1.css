@@ -1,4 +1,28 @@
 .card1 {
-    border-radius: 1.2rem !important;
-    background-color: #00b39b ;
+    border-radius: 10px !important;
+    background-color: #00b39b !important;
+    height: 345px;
+}
+.ctext {
+    font-size: 1.5em !important;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+.ctitle {
+    color: #fff;  
+    font-weight: bolder !important;
+    font-size: 1.625em !important;
+}
+.card2 {
+    border-radius: 10px !important;
+    background-color: #3d83df !important;
+    height: 345px;
+}
+.card3 {
+    border-radius: 10px !important;
+    background-color: #1b2734 !important;
+    height: 345px;
+    width: ;
 }
