@@ -24,5 +24,11 @@
     border-radius: 10px !important;
     background-color: #1b2734 !important;
     height: 345px;
-    width: ;
+}
+.switcher {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
 }

@@ -1,0 +1,24 @@
+.stats__item{
+    background: #fff ;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+    text-align: center;
+    padding: 15px;
+    font-size: .8125em;
+    height: 250px;
+
+}
+
+.stats__item h3{
+    color: #56c4a5;
+}
+.stats__item p{
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+}
+.stats__item img{
+    margin: 10px 0 20px 0;
+}
+.s1 {
+    overflow-y: hidden;
+}
