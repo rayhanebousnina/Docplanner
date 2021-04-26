@@ -11,7 +11,9 @@ function App() {
   return (
 
     <div>
+      <Container>
       <Navigation/>
+      </Container>
       <Row className="d-flex justify-content-center"><img src="images/sygnet.png"></img></Row>
       <Row className="pt-5">        
         <div className="container title h1 text-center">
@@ -33,16 +35,16 @@ function App() {
           <Col className="pl-5" md={4}><div className="partners">We are a global company with local culture</div></Col>
           <Col className="pt-2" md={8}>
             <Row className="pb-5">
-              <Col md={3}><img className="partner-znany" src="images/znanylekarz.png"></img></Col>
-              <Col md={3}><img className="partner" src="images/logo-default-es.svg"></img></Col>
-              <Col md={3}><img className="partner" src="images/logo-default-it.svg"></img></Col>
-              <Col md={3}><img className="partner" src="images/logo-default-tr.svg"></img></Col>
+              <Col md={3} xs={6}><img className="partner-znany" src="images/znanylekarz.png"></img></Col>
+              <Col md={3} xs={6}><img className="partner" src="images/logo-default-es.svg"></img></Col>
+              <Col md={3} xs={6}><img className="partner" src="images/logo-default-it.svg"></img></Col>
+              <Col md={3} xs={6}><img className="partner" src="images/logo-default-tr.svg"></img></Col>
             </Row>
-            <Row>
-              <Col md={3}><img className="partner" src="images/logo-default-cz.svg"></img></Col>
-              <Col md={3}><img className="partner" src="images/logo-tuotempo.svg"></img></Col>
-              <Col className="text-center" md={2}><img className="partner-gipo" src="images/logo-gipo.svg"></img></Col>
-              <Col md={2}><img className="partner-clinicloud" src="images/logo-clinicloud.svg"></img></Col>
+            <Row className="pl-2">
+              <Col md={3} xs={6}><img className="partner" src="images/logo-default-cz.svg"></img></Col>
+              <Col md={3} xs={6}><img className="partner" src="images/logo-tuotempo.svg"></img></Col>
+              <Col className="text-center" md={2} xs={6}><img className="partner-gipo" src="images/logo-gipo.svg"></img></Col>
+              <Col md={2} xs={6}><img className="partner-clinicloud" src="images/logo-clinicloud.svg"></img></Col>
             </Row>
           </Col>
         </Row>
@@ -56,7 +58,7 @@ function App() {
           <Col className="my-3" md={7}><CardTwo/></Col>
         </Row>
       </div>
-      <div className="container">
+      <div className="container pb-4">
         <Countries/>
       </div>
       <Container>
