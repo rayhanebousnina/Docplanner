@@ -3,9 +3,20 @@ import CardOne from './components/card1';
 import CardTwo from './components/card2';
 import Countries from './components/countries';
 import Footer from './components/footer';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Row, Col, Container, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
+
+const cities = [
+  {title :"Warsaw" , src :"images/1.png"},
+  {title :"Barcelona" , src :"images/2.png"},
+  {title :"Istanbul" , src :"images/3.png"},
+  {title :"Rome" , src :"images/4.png"},
+  {title :"Bologna" , src :"images/5.png"},
+  {title :"Curitiba" , src :"images/6.png"},
+  {title :"Mexico City" , src :"images/7.png"},
+]
 
 function App() {
   return (
@@ -58,11 +69,46 @@ function App() {
           <Col className="my-3" md={7}><CardTwo/></Col>
         </Row>
       </div>
-      <div className="container pb-4">
-        <Countries/>
-      </div>
+      <Container className="pb-4">
+        <Row className="text-center pb-4">
+          <Col md={3}></Col>
+          <Col md={6}>
+              <div className="t2">Improve the lives of millions. Change yours forever</div>
+          </Col>
+          <Col md={3}></Col>
+        </Row>
+        <Row className="text-center pb-5">
+          <Col md={3}></Col>
+          <Col md={6}>
+          <p>
+          More than 1400 team mates share our same vision, goals and passion. With offices in Warsaw, Barcelona, Istanbul, Rome, Bologna, Mexico City and Curitiba, our search for great talent never stops.
+          </p>
+          </Col>
+          <Col md={3}></Col>
+        </Row>
+
+        <div className="d-flex flex-wrap">
+          <Countries pays = {cities}/>
+        </div>
+
+        <Row className="text-center mt-5 pb-4">
+          <Col md={3}></Col>
+          <Col md={6}>
+              <div className="t2-turquoise">Sounds interesting? Join us now!</div>
+          </Col>
+          <Col md={3}></Col>
+          </Row>
+          <Row className="text-center">
+          <Col md={3}></Col>
+          <Col md={6}>
+              <Button variant="primary">SEE ALL CURRENT OPENINGS</Button>
+          </Col>
+          <Col md={3}></Col>
+        </Row>
+      </Container>
+      
       <Container>
-      <Footer/>
+        <Footer/>
       </Container>
      
     </div>
