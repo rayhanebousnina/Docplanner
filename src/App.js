@@ -2,6 +2,7 @@ import Navigation from './components/navbar';
 import CardOne from './components/card1';
 import CardTwo from './components/card2';
 import Countries from './components/countries';
+import Footer from './components/footer';
 import {Row, Col, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -58,6 +59,9 @@ function App() {
       <div className="container">
         <Countries/>
       </div>
+      <Container>
+      <Footer/>
+      </Container>
      
     </div>
 
